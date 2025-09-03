@@ -1,0 +1,226 @@
+/* --- Configuração Global e Variáveis --- */
+:root {
+    --background-color: #f0f2f5;
+    --container-background: #ffffff;
+    --text-color: #2c3e50;
+    --primary-color: #3498db;
+    --primary-hover-color: #2980b9;
+    --secondary-color: #2ecc71;
+    --secondary-hover-color: #27ae60;
+    --border-color: #bdc3c7;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* --- TELA DE LOGIN --- */
+#login-screen {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+}
+
+.login-container .logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: var(--text-color);
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    height: 45px;
+    padding: 0 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+input[type="color"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    border: 1px solid var(--border-color);
+    background: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 3px;
+}
+
+input[type="color"]::-moz-color-swatch {
+    border: none;
+    border-radius: 3px;
+}
+
+.button-primary {
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 1.1em;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.button-primary:hover {
+    background-color: var(--secondary-hover-color);
+}
+
+.instructions {
+    margin-top: 30px;
+    color: #7f8c8d;
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+
+/* --- ESTILOS DA TELA DE JOGO --- */
+#game-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+}
+
+#game-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+canvas {
+    background-color: var(--container-background);
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+#scoreboard {
+    background-color: var(--container-background);
+    width: 300px;
+    height: 100%;
+    max-width: 300px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+    border-radius: 20px;
+    overflow-y: auto;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+#scoreboard h2 {
+    font-size: 1.4em;
+    text-align: center;
+}
+
+#scoreboard ul {
+    list-style: none;
+    text-align: left;
+    margin-top: 20px;
+}
+
+#scoreboard li {
+    padding: 10px 5px;
+    font-weight: 500;
+    font-size: 1.1em;
+    border-bottom: 1px solid #eee;
+}
+
+#scoreboard li:last-child {
+    border-bottom: none;
+}
+
+#chatbox {
+    width: 800px;
+    height: 90px;
+    background-color: var(--container-background);
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    padding: 15px;
+    overflow-y: auto;
+    font-size: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+#messages p {
+    margin: 0 0 5px 0;
+    color: #555;
+    font-style: italic;
+}
+
+.button-secondary {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    color: #555;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.button-secondary:hover {
+    background-color: #e9ecef;
+    border-color: #ced4da;
+}

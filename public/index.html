@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat 'n' Cubes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="login-screen">
+        <div class="login-container">
+            <h1 class="logo">Eat 'n' Cubes</h1>
+
+            <div class="form-group">
+                <input type="text" id="playerNameInput" placeholder="Apelido" maxlength="15">
+                <input type="color" id="playerColorInput" value="#ffd60a" title="Escolha sua cor">
+            </div>
+
+            <button id="joinButton" class="button-primary">Jogar!</button>
+
+            <div class="instructions">
+                <p>Use as <b>Setas</b> para mover</p>
+                <p>Colete os itens para pontuar</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="game-container" class="hidden">
+        <div id="game-area">
+            <canvas id="gameCanvas" width="800" height="600"></canvas>
+            <div id="chatbox">
+                <div id="messages"></div>
+            </div>
+        </div>
+        <div id="scoreboard" class="card">
+            <div>
+                <h2>Placar</h2>
+                <ul id="scoreboard-list"></ul>
+            </div>
+            <button id="exitButton" class="button-secondary">Sair do Jogo</button>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+
+</html>

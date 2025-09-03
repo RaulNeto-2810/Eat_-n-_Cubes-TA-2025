@@ -6,7 +6,6 @@
   "name": "atividade2",
   "version": "1.0.0",
   "main": "servidor.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

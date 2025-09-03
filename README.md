@@ -10,7 +10,7 @@ Este projeto foi desenvolvido como parte da disciplina de Tópicos Avançados em
 
 A versão ao vivo do jogo está hospedada na Vercel. Acesse pelo link abaixo:
 
-**[Clique aqui para jogar!](https://eat-n-cubes.vercel.app/)
+**[Clique aqui para jogar!](https://eat-n-cubes.vercel.app/)**
 
 ---
 
@@ -52,7 +52,7 @@ Siga os passos abaixo para configurar e rodar o projeto na sua máquina.
 Abra seu terminal e use o comando abaixo para clonar o projeto.
 
 ```bash
-git clone [https://github.com/seu-usuario/eat-n-cubes.git](https://github.com/seu-usuario/eat-n-cubes.git)
+git clone [https://github.com/RaulNeto-2810/Eat_-n-_Cubes-TA-2025](https://github.com/RaulNeto-2810/Eat_-n-_Cubes-TA-2025)
 ```
 
 **2. Acesse a pasta do projeto:**
@@ -72,14 +72,13 @@ npm install
 Este comando executa o script "start" definido no package.json, que por sua vez inicia o server.js.
 
 ```bash
-npm server.js
+node server.js
 ```
 
 **5. Acesse o jogo:**
 Após o passo anterior, o servidor estará rodando. Abra seu navegador e acesse a seguinte URL:
-```bash
+
 http://localhost:3000
-```
 
 Para testar o modo multiplayer, você pode abrir o mesmo link em várias abas ou janelas do navegador.
 

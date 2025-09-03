@@ -52,7 +52,7 @@ Siga os passos abaixo para configurar e rodar o projeto na sua máquina.
 Abra seu terminal e use o comando abaixo para clonar o projeto.
 
 ```bash
-git clone [https://github.com/RaulNeto-2810/Eat_-n-_Cubes-TA-2025](https://github.com/RaulNeto-2810/Eat_-n-_Cubes-TA-2025)
+git clone https://github.com/RaulNeto-2810/Eat_-n-_Cubes-TA-2025
 ```
 
 **2. Acesse a pasta do projeto:**

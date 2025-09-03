@@ -39,7 +39,7 @@ A versão ao vivo do jogo está hospedada na Vercel. Acesse pelo link abaixo:
 
 Antes de começar, você vai precisar ter as seguintes ferramentas instaladas em sua máquina:
 -   [Git](https://git-scm.com)
--   [Node.js (versão 18 ou superior)](https://nodejs.org/en/)
+-   [Node.js (versão 18 ou superior)](https://nodejs.org)
 -   npm (geralmente já vem instalado com o Node.js)
 
 ---
@@ -53,28 +53,33 @@ Abra seu terminal e use o comando abaixo para clonar o projeto.
 
 ```bash
 git clone [https://github.com/seu-usuario/eat-n-cubes.git](https://github.com/seu-usuario/eat-n-cubes.git)
+```
 
 **2. Acesse a pasta do projeto:**
 
 ```bash
 cd eat-n-cubes
+```
 
 **3. Instale as dependências:**
 Este comando irá ler o arquivo package.json e instalar todas as bibliotecas necessárias (Express e Socket.IO).
 
 ```bash
 npm install
+```
 
 **4. Inicie o servidor:**
 Este comando executa o script "start" definido no package.json, que por sua vez inicia o server.js.
 
 ```bash
 npm server.js
+```
 
 **5. Acesse o jogo:**
 Após o passo anterior, o servidor estará rodando. Abra seu navegador e acesse a seguinte URL:
-
+```bash
 http://localhost:3000
+```
 
 Para testar o modo multiplayer, você pode abrir o mesmo link em várias abas ou janelas do navegador.
 

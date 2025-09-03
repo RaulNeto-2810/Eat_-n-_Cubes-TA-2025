@@ -6,14 +6,6 @@ Este projeto foi desenvolvido como parte da disciplina de Tópicos Avançados em
 
 ---
 
-## 🕹️ Jogue Agora!
-
-A versão ao vivo do jogo está hospedada na Vercel. Acesse pelo link abaixo:
-
-**[Clique aqui para jogar!](https://eat-n-cubes.vercel.app/)**
-
----
-
 ## ✨ Funcionalidades
 
 -   **[x] Multiplayer em Tempo Real:** Jogue com múltiplos jogadores conectados ao mesmo servidor.

@@ -23,7 +23,6 @@ Este projeto foi desenvolvido como parte da disciplina de Tópicos Avançados em
 -   **Backend:** Node.js, Express.js
 -   **Comunicação em Tempo Real:** Socket.IO
 -   **Frontend:** HTML5, CSS3, JavaScript (Vanilla)
--   **Hospedagem:** Vercel
 
 ---
 
